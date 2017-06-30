@@ -7,7 +7,7 @@ exports.Pagination = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5;
+var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5;
 
 var _aureliaBinding = require('aurelia-binding');
 
@@ -62,7 +62,7 @@ function _initializerWarningHelper(descriptor, context) {
   throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
 }
 
-var Pagination = exports.Pagination = (_dec = (0, _aureliaTemplating.containerless)(), _dec2 = (0, _aureliaTemplating.customElement)('aup-pagination'), _dec3 = (0, _aureliaDependencyInjection.inject)(_aureliaPluginsPaginationConfig.Config), _dec4 = (0, _aureliaTemplating.bindable)({ defaultBindingMode: _aureliaBinding.bindingMode.twoWay }), _dec5 = (0, _aureliaTemplating.bindable)({ defaultBindingMode: _aureliaBinding.bindingMode.twoWay }), _dec6 = (0, _aureliaTemplating.bindable)({ defaultBindingMode: _aureliaBinding.bindingMode.twoWay }), _dec7 = (0, _aureliaTemplating.bindable)({ defaultBindingMode: _aureliaBinding.bindingMode.twoWay }), _dec8 = (0, _aureliaBinding.computedFrom)('_totalPages', 'currentPage'), _dec9 = (0, _aureliaBinding.computedFrom)('currentPage'), _dec(_class = _dec2(_class = _dec3(_class = (_class2 = function () {
+var Pagination = exports.Pagination = (_dec = (0, _aureliaTemplating.customElement)('aup-pagination'), _dec2 = (0, _aureliaDependencyInjection.inject)(_aureliaPluginsPaginationConfig.Config), _dec3 = (0, _aureliaTemplating.bindable)({ defaultBindingMode: _aureliaBinding.bindingMode.twoWay }), _dec4 = (0, _aureliaTemplating.bindable)({ defaultBindingMode: _aureliaBinding.bindingMode.twoWay }), _dec5 = (0, _aureliaTemplating.bindable)({ defaultBindingMode: _aureliaBinding.bindingMode.twoWay }), _dec6 = (0, _aureliaTemplating.bindable)({ defaultBindingMode: _aureliaBinding.bindingMode.twoWay }), _dec7 = (0, _aureliaBinding.computedFrom)('_totalPages', 'currentPage'), _dec8 = (0, _aureliaBinding.computedFrom)('currentPage'), _dec(_class = _dec2(_class = (_class2 = function () {
   function Pagination(config) {
     _classCallCheck(this, Pagination);
 
@@ -121,16 +121,16 @@ var Pagination = exports.Pagination = (_dec = (0, _aureliaTemplating.containerle
 }(), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, '_pageInput', [_aureliaBinding.observable], {
   enumerable: true,
   initializer: null
-}), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'currentPage', [_dec4], {
+}), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'currentPage', [_dec3], {
   enumerable: true,
   initializer: null
-}), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'pageSize', [_dec5], {
+}), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'pageSize', [_dec4], {
   enumerable: true,
   initializer: null
-}), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'pageSizes', [_dec6], {
+}), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'pageSizes', [_dec5], {
   enumerable: true,
   initializer: null
-}), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, 'totalItems', [_dec7], {
+}), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, 'totalItems', [_dec6], {
   enumerable: true,
   initializer: null
-}), _applyDecoratedDescriptor(_class2.prototype, 'noNext', [_dec8], Object.getOwnPropertyDescriptor(_class2.prototype, 'noNext'), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, 'noPrevious', [_dec9], Object.getOwnPropertyDescriptor(_class2.prototype, 'noPrevious'), _class2.prototype)), _class2)) || _class) || _class) || _class);
+}), _applyDecoratedDescriptor(_class2.prototype, 'noNext', [_dec7], Object.getOwnPropertyDescriptor(_class2.prototype, 'noNext'), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, 'noPrevious', [_dec8], Object.getOwnPropertyDescriptor(_class2.prototype, 'noPrevious'), _class2.prototype)), _class2)) || _class) || _class);

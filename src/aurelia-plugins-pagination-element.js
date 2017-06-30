@@ -1,13 +1,12 @@
 // IMPORTS
 import {bindingMode, computedFrom, observable} from 'aurelia-binding';
 import {inject} from 'aurelia-dependency-injection';
-import {bindable, containerless, customElement} from 'aurelia-templating';
+import {bindable, customElement} from 'aurelia-templating';
 
 import {Config} from './aurelia-plugins-pagination-config';
 
 
 // CLASS ATTRIBUTES
-@containerless()
 @customElement('aup-pagination')
 @inject(Config)
 

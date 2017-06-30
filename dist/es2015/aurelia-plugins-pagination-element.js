@@ -1,4 +1,4 @@
-var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5;
+var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5;
 
 function _initDefineProp(target, property, descriptor, context) {
   if (!descriptor) return;
@@ -45,11 +45,11 @@ function _initializerWarningHelper(descriptor, context) {
 
 import { bindingMode, computedFrom, observable } from 'aurelia-binding';
 import { inject } from 'aurelia-dependency-injection';
-import { bindable, containerless, customElement } from 'aurelia-templating';
+import { bindable, customElement } from 'aurelia-templating';
 
 import { Config } from './aurelia-plugins-pagination-config';
 
-export let Pagination = (_dec = containerless(), _dec2 = customElement('aup-pagination'), _dec3 = inject(Config), _dec4 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec5 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec6 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec7 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec8 = computedFrom('_totalPages', 'currentPage'), _dec9 = computedFrom('currentPage'), _dec(_class = _dec2(_class = _dec3(_class = (_class2 = class Pagination {
+export let Pagination = (_dec = customElement('aup-pagination'), _dec2 = inject(Config), _dec3 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec4 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec5 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec6 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec7 = computedFrom('_totalPages', 'currentPage'), _dec8 = computedFrom('currentPage'), _dec(_class = _dec2(_class = (_class2 = class Pagination {
   constructor(config) {
     _initDefineProp(this, '_pageInput', _descriptor, this);
 
@@ -100,16 +100,16 @@ export let Pagination = (_dec = containerless(), _dec2 = customElement('aup-pagi
 }, (_descriptor = _applyDecoratedDescriptor(_class2.prototype, '_pageInput', [observable], {
   enumerable: true,
   initializer: null
-}), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'currentPage', [_dec4], {
+}), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'currentPage', [_dec3], {
   enumerable: true,
   initializer: null
-}), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'pageSize', [_dec5], {
+}), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'pageSize', [_dec4], {
   enumerable: true,
   initializer: null
-}), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'pageSizes', [_dec6], {
+}), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'pageSizes', [_dec5], {
   enumerable: true,
   initializer: null
-}), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, 'totalItems', [_dec7], {
+}), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, 'totalItems', [_dec6], {
   enumerable: true,
   initializer: null
-}), _applyDecoratedDescriptor(_class2.prototype, 'noNext', [_dec8], Object.getOwnPropertyDescriptor(_class2.prototype, 'noNext'), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, 'noPrevious', [_dec9], Object.getOwnPropertyDescriptor(_class2.prototype, 'noPrevious'), _class2.prototype)), _class2)) || _class) || _class) || _class);
+}), _applyDecoratedDescriptor(_class2.prototype, 'noNext', [_dec7], Object.getOwnPropertyDescriptor(_class2.prototype, 'noNext'), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, 'noPrevious', [_dec8], Object.getOwnPropertyDescriptor(_class2.prototype, 'noPrevious'), _class2.prototype)), _class2)) || _class) || _class);

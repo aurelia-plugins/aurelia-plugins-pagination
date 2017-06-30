@@ -3,7 +3,7 @@
 System.register(['aurelia-binding', 'aurelia-dependency-injection', 'aurelia-templating', './aurelia-plugins-pagination-config'], function (_export, _context) {
   "use strict";
 
-  var bindingMode, computedFrom, observable, inject, bindable, containerless, customElement, Config, _createClass, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, Pagination;
+  var bindingMode, computedFrom, observable, inject, bindable, customElement, Config, _createClass, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, Pagination;
 
   function _initDefineProp(target, property, descriptor, context) {
     if (!descriptor) return;
@@ -63,7 +63,6 @@ System.register(['aurelia-binding', 'aurelia-dependency-injection', 'aurelia-tem
       inject = _aureliaDependencyInjection.inject;
     }, function (_aureliaTemplating) {
       bindable = _aureliaTemplating.bindable;
-      containerless = _aureliaTemplating.containerless;
       customElement = _aureliaTemplating.customElement;
     }, function (_aureliaPluginsPaginationConfig) {
       Config = _aureliaPluginsPaginationConfig.Config;
@@ -87,7 +86,7 @@ System.register(['aurelia-binding', 'aurelia-dependency-injection', 'aurelia-tem
         };
       }();
 
-      _export('Pagination', Pagination = (_dec = containerless(), _dec2 = customElement('aup-pagination'), _dec3 = inject(Config), _dec4 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec5 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec6 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec7 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec8 = computedFrom('_totalPages', 'currentPage'), _dec9 = computedFrom('currentPage'), _dec(_class = _dec2(_class = _dec3(_class = (_class2 = function () {
+      _export('Pagination', Pagination = (_dec = customElement('aup-pagination'), _dec2 = inject(Config), _dec3 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec4 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec5 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec6 = bindable({ defaultBindingMode: bindingMode.twoWay }), _dec7 = computedFrom('_totalPages', 'currentPage'), _dec8 = computedFrom('currentPage'), _dec(_class = _dec2(_class = (_class2 = function () {
         function Pagination(config) {
           _classCallCheck(this, Pagination);
 
@@ -146,19 +145,19 @@ System.register(['aurelia-binding', 'aurelia-dependency-injection', 'aurelia-tem
       }(), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, '_pageInput', [observable], {
         enumerable: true,
         initializer: null
-      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'currentPage', [_dec4], {
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'currentPage', [_dec3], {
         enumerable: true,
         initializer: null
-      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'pageSize', [_dec5], {
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'pageSize', [_dec4], {
         enumerable: true,
         initializer: null
-      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'pageSizes', [_dec6], {
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'pageSizes', [_dec5], {
         enumerable: true,
         initializer: null
-      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, 'totalItems', [_dec7], {
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, 'totalItems', [_dec6], {
         enumerable: true,
         initializer: null
-      }), _applyDecoratedDescriptor(_class2.prototype, 'noNext', [_dec8], Object.getOwnPropertyDescriptor(_class2.prototype, 'noNext'), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, 'noPrevious', [_dec9], Object.getOwnPropertyDescriptor(_class2.prototype, 'noPrevious'), _class2.prototype)), _class2)) || _class) || _class) || _class));
+      }), _applyDecoratedDescriptor(_class2.prototype, 'noNext', [_dec7], Object.getOwnPropertyDescriptor(_class2.prototype, 'noNext'), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, 'noPrevious', [_dec8], Object.getOwnPropertyDescriptor(_class2.prototype, 'noPrevious'), _class2.prototype)), _class2)) || _class) || _class));
 
       _export('Pagination', Pagination);
     }
