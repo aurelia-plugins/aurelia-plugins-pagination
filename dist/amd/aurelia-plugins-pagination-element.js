@@ -73,7 +73,7 @@ define(['exports', 'aurelia-binding', 'aurelia-dependency-injection', 'aurelia-t
     throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
   }
 
-  var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5;
+  var _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _class, _desc, _value, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _descriptor9, _descriptor10;
 
   var Pagination = exports.Pagination = (_dec = (0, _aureliaTemplating.customElement)('aup-pagination'), _dec2 = (0, _aureliaDependencyInjection.inject)(_aureliaPluginsPaginationConfig.Config), _dec3 = (0, _aureliaTemplating.bindable)({ defaultBindingMode: _aureliaBinding.bindingMode.twoWay }), _dec4 = (0, _aureliaTemplating.bindable)({ defaultBindingMode: _aureliaBinding.bindingMode.twoWay }), _dec5 = (0, _aureliaTemplating.bindable)({ defaultBindingMode: _aureliaBinding.bindingMode.twoWay }), _dec6 = (0, _aureliaTemplating.bindable)({ defaultBindingMode: _aureliaBinding.bindingMode.twoWay }), _dec7 = (0, _aureliaBinding.computedFrom)('_totalPages', 'currentPage'), _dec8 = (0, _aureliaBinding.computedFrom)('currentPage'), _dec(_class = _dec2(_class = (_class2 = function () {
     function Pagination(config) {
@@ -81,13 +81,23 @@ define(['exports', 'aurelia-binding', 'aurelia-dependency-injection', 'aurelia-t
 
       _initDefineProp(this, '_pageInput', _descriptor, this);
 
-      _initDefineProp(this, 'currentPage', _descriptor2, this);
+      _initDefineProp(this, 'buttonClass', _descriptor2, this);
 
-      _initDefineProp(this, 'pageSize', _descriptor3, this);
+      _initDefineProp(this, 'inputClass', _descriptor3, this);
 
-      _initDefineProp(this, 'pageSizes', _descriptor4, this);
+      _initDefineProp(this, 'optionClass', _descriptor4, this);
 
-      _initDefineProp(this, 'totalItems', _descriptor5, this);
+      _initDefineProp(this, 'selectClass', _descriptor5, this);
+
+      _initDefineProp(this, 'textClass', _descriptor6, this);
+
+      _initDefineProp(this, 'currentPage', _descriptor7, this);
+
+      _initDefineProp(this, 'pageSize', _descriptor8, this);
+
+      _initDefineProp(this, 'pageSizes', _descriptor9, this);
+
+      _initDefineProp(this, 'totalItems', _descriptor10, this);
 
       this._config = config;
     }
@@ -134,16 +144,31 @@ define(['exports', 'aurelia-binding', 'aurelia-dependency-injection', 'aurelia-t
   }(), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, '_pageInput', [_aureliaBinding.observable], {
     enumerable: true,
     initializer: null
-  }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'currentPage', [_dec3], {
+  }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, 'buttonClass', [_aureliaTemplating.bindable], {
     enumerable: true,
     initializer: null
-  }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'pageSize', [_dec4], {
+  }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, 'inputClass', [_aureliaTemplating.bindable], {
     enumerable: true,
     initializer: null
-  }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'pageSizes', [_dec5], {
+  }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, 'optionClass', [_aureliaTemplating.bindable], {
     enumerable: true,
     initializer: null
-  }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, 'totalItems', [_dec6], {
+  }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, 'selectClass', [_aureliaTemplating.bindable], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, 'textClass', [_aureliaTemplating.bindable], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, 'currentPage', [_dec3], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, 'pageSize', [_dec4], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor9 = _applyDecoratedDescriptor(_class2.prototype, 'pageSizes', [_dec5], {
+    enumerable: true,
+    initializer: null
+  }), _descriptor10 = _applyDecoratedDescriptor(_class2.prototype, 'totalItems', [_dec6], {
     enumerable: true,
     initializer: null
   }), _applyDecoratedDescriptor(_class2.prototype, 'noNext', [_dec7], Object.getOwnPropertyDescriptor(_class2.prototype, 'noNext'), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, 'noPrevious', [_dec8], Object.getOwnPropertyDescriptor(_class2.prototype, 'noPrevious'), _class2.prototype)), _class2)) || _class) || _class);

@@ -2,6 +2,11 @@ export declare class Pagination {
     _config: any;
     _pageInput: any;
     _totalPages: any;
+    buttonClass: any;
+    inputClass: any;
+    optionClass: any;
+    selectClass: any;
+    textClass: any;
     currentPage: any;
     pageSize: any;
     pageSizes: any;

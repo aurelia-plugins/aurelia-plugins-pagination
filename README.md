@@ -91,3 +91,11 @@ There are 2 computed properties available, once all above properties have given 
 * The property `skip` will give the number of items that needs to be skipped
 
 In the `activate` method defined by the `aurelia-router` you at least specify the total amount of items that are in the list you're paging. As soon as the `totalItems` are set the `PagedViewModel` will fire a method called `reload()`. In this method you do the actual retrieving of the subset of your list based on the `limit` and `skip` properties. The `reload()` method is also fired when your `currentPage` or `pageSizes` changes.
+
+The styling of the different elements in `<aup-pagination>` can be changed with these optional bindable properties:
+
+* `button-class` - the CSS class for the `first`, `previous`, `next` and `last` buttons
+* `input-class` - the CSS class for the `input` element that controls the `currentPage`
+* `text-class` - the CSS class for the text that shows the total amount of pages
+* `select-class` - the CSS class for the `select` element that controls the `pageSize`
+* `option-class` - the CSS class for the `option` element of each `pageSize`

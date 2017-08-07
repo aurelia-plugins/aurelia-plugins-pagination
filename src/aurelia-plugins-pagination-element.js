@@ -19,6 +19,12 @@ export class Pagination {
   _totalPages;
 
   // BINDABLE PROPERTIES
+  @bindable buttonClass;
+  @bindable inputClass;
+  @bindable optionClass;
+  @bindable selectClass;
+  @bindable textClass;
+
   @bindable({ defaultBindingMode: bindingMode.twoWay }) currentPage;
   @bindable({ defaultBindingMode: bindingMode.twoWay }) pageSize;
   @bindable({ defaultBindingMode: bindingMode.twoWay }) pageSizes;
