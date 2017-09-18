@@ -1,6 +1,6 @@
 {
   "name": "aurelia-plugins-pagination",
-  "version": "2.5.2",
+  "version": "2.5.3",
   "description": "A pagination plugin for Aurelia.",
   "keywords": [
     "aurelia",
@@ -46,7 +46,7 @@
   },
   "jspm": {
     "registry": "npm",
-    "main": "index",
+    "main": "aurelia-plugins-pagination",
     "format": "amd",
     "directories": {
       "dist": "dist/amd"
