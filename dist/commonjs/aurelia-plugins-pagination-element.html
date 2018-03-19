@@ -1,11 +1,11 @@
 <template>
   <ul class="list-inline" if.bind="totalItems > 0">
-    <li><a class="${ noPrevious ? 'disabled' : '' } ${buttonClass}" click.delegate="goto(1)" href><i class="fa fa-angle-double-left"></i></a></li>
-    <li><a class="${ noPrevious ? 'disabled' : '' } ${buttonClass}" click.delegate="goto(currentPage - 1)" href><i class="fa fa-angle-left"></i></a></li>
+    <li><button class="${ noPrevious ? 'disabled' : '' } ${buttonClass}" click.delegate="goto(1)" type="button"><i class="fa fa-angle-double-left"></i></button></li>
+    <li><button class="${ noPrevious ? 'disabled' : '' } ${buttonClass}" click.delegate="goto(currentPage - 1)" type="button"><i class="fa fa-angle-left"></i></button></li>
     <li><input class="${inputClass}" type="text" value.bind="_pageInput" /></li>
     <li><small class="${textClass}">${ _config.get('of') } ${_totalPages}</small></li>
-    <li><a class="${ noNext ? 'disabled' : '' } ${buttonClass}" click.delegate="goto(currentPage - -1)" href><i class="fa fa-angle-right"></i></a></li>
-    <li><a class="${ noNext ? 'disabled' : '' } ${buttonClass}" click.delegate="goto(_totalPages)" href><i class="fa fa-angle-double-right"></i></a></li>
+    <li><button class="${ noNext ? 'disabled' : '' } ${buttonClass}" click.delegate="goto(currentPage - -1)" type="button"><i class="fa fa-angle-right"></i></button></li>
+    <li><button class="${ noNext ? 'disabled' : '' } ${buttonClass}" click.delegate="goto(_totalPages)" type="button"><i class="fa fa-angle-double-right"></i></button></li>
     <li><select class="${selectClass}" value.bind="pageSize"><option class="${optionClass}" model.bind="pageSize" repeat.for="pageSize of pageSizes">${pageSize}</option></select></li>
   </ul>
 </template>
