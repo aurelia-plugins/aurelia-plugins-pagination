@@ -4,6 +4,10 @@ export let Config = class Config {
     this._config = { of: 'of' };
   }
 
+  all() {
+    return this._config;
+  }
+
   get(key) {
     return this._config[key];
   }
