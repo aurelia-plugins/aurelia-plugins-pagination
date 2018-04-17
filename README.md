@@ -51,8 +51,8 @@ export async function configure(aurelia) {
       });
     });
 
-    await aurelia.start();
-    aurelia.setRoot('app');
+  await aurelia.start();
+  aurelia.setRoot('app');
 }
 ```
 
@@ -90,7 +90,7 @@ export class MyViewModel extends PagedViewModel {
 }
 ```
 
-By default the following properties are defined in the `PagedViewModel` - and thus available in your own view model:
+By default the following properties are defined in the `PagedViewModel` - and available in your own view model:
 * `currentPage` - default is `1`
 * `pageSize` - default is `10`
 * `pageSizes` - default is an array `[10, 25, 50, 100]`
@@ -100,7 +100,7 @@ There are 2 computed properties available, once all above properties have given 
 * The property `limit` will give you the number of items that needs to be retrieved
 * The property `skip` will give the number of items that needs to be skipped
 
-In the `activate` method defined by the `aurelia-router` you at least specify the total amount of items that are in the list you're paging. As soon as the `totalItems` are set the `PagedViewModel` will fire a method called `reload()`. In this method you do the actual retrieving of the subset of your list based on the `limit` and `skip` properties. The `reload()` method is also fired when your `currentPage` or `pageSizes` changes.
+In the `activate` method defined by the `aurelia-router` you at least specify the total amount of items that are in the list you're paging. As soon as the `totalItems` property is set, the `PagedViewModel` will fire a method called `reload()`. In this method you do the actual retrieving of the subset of your list based on the `limit` and `skip` properties. The `reload()` method is also fired when your `currentPage` or `pageSizes` changes.
 
 The styling of the different elements in `<aup-pagination>` can be changed with these optional bindable properties:
 

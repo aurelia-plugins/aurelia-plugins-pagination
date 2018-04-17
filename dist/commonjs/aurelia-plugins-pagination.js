@@ -15,7 +15,7 @@ var _aureliaPluginsPaginationPagedViewModel = require('./aurelia-plugins-paginat
 function configure(aurelia, configCallback) {
   var instance = aurelia.container.get(_aureliaPluginsPaginationConfig.Config);
   if (configCallback !== undefined && typeof configCallback === 'function') configCallback(instance);
-  aurelia.globalResources(_aureliaPal.PLATFORM.moduleName('./aurelia-plugins-pagination-element'));
+  aurelia.globalResources([_aureliaPal.PLATFORM.moduleName('./aurelia-plugins-pagination-element')]);
 }
 
 exports.PagedViewModel = _aureliaPluginsPaginationPagedViewModel.PagedViewModel;
